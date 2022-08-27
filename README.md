@@ -3,4 +3,7 @@
 好きな食事を投票できるサイトです
 
 
-Uploading 画面収録 2022-08-27 16.36.40.mov…
+
+
+https://user-images.githubusercontent.com/68400191/187020414-4c94cde6-b3ea-43c5-afe9-781acb8b4b57.mov
+

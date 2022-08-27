@@ -31,9 +31,20 @@ class Meal(models.Model):
 
         return math.floor(total / self.numberOfVotes()*10)/10
 
+    def totalRating(self):
+        if not self.numberOfVotes():
+            return 0
+
+        votes = MealRating.objects.filter(meal=self)
+
+        total = 0
+        for vote in votes:
+            total += vote.rating
+
+        return float(total)
+
     def numberOfVotes(self):
         count = MealRating.objects.filter(meal=self).count()
-
         return count
 
     def __str__(self):

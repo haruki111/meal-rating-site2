@@ -29,7 +29,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="">Morning</a>
+            <a class="nav-link" href="{% url 'mealsite:list' 'morning' %}"
+              >Morning</a
+            >
+            <a class="nav-link" href="{% url 'mealsite:list' 'afternoon' %}"
+              >Afternoon</a
+            >
+            <a class="nav-link" href="{% url 'mealsite:list' 'evening' %}"
+              >Evening</a
+            >
+            <a class="nav-link" href="{% url 'mealsite:list' 'recently' %}"
+              >Recently</a
+            >
+            <a class="nav-link" href="{% url 'mealsite:list' 'toprate' %}"
+              >Top Rated</a
+            >
           </div>
         </div>
       </div>
@@ -45,7 +59,10 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <!-- Vue.js CDN -->
     <script src="https://unpkg.com/vue@next"></script>
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     {% block script %}{% endblock script %}
   </body>
 </html>
